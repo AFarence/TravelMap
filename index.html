@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9d81a5b389be41c1b44f4723798be1cc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+              <h3 align="center" style="font-size:16px"><b>Some of the places we've talked about...</b></h3>
+             
+    
+            <div class="folium-map" id="map_9d81a5b389be41c1b44f4723798be1cc" ></div>
+        
+</body>
+<script>    
+    
+            var map_9d81a5b389be41c1b44f4723798be1cc = L.map(
+                "map_9d81a5b389be41c1b44f4723798be1cc",
+                {
+                    center: [47.04303414444444, -31.562381211111113],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_91099c469c534b40ae1545743e3a6e0a = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9d81a5b389be41c1b44f4723798be1cc);
+        
+    
+            var marker_cluster_5238daedd154491184b576031aa2afcc = L.markerClusterGroup(
+                {}
+            );
+            map_9d81a5b389be41c1b44f4723798be1cc.addLayer(marker_cluster_5238daedd154491184b576031aa2afcc);
+        
+    
+            var marker_c03b652902b344fcb68fe548df1de7be = L.marker(
+                [40.0149856, -105.2705456],
+                {}
+            ).addTo(marker_cluster_5238daedd154491184b576031aa2afcc);
+        
+    
+            marker_c03b652902b344fcb68fe548df1de7be.bindTooltip(
+                `<div>
+                     <strong>Boulder Colorado</strong><br>    <strong>---------</strong><br>    <strong>A place to visit</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_22455b85d85046aeb5ac5815aca9321a = L.marker(
+                [40.0378755, -76.3055144],
+                {}
+            ).addTo(marker_cluster_5238daedd154491184b576031aa2afcc);
+        
+    
+            marker_22455b85d85046aeb5ac5815aca9321a.bindTooltip(
+                `<div>
+                     <strong>Lancaster, Pa.</strong><br>    <strong>---------</strong><br>    <strong>There's good dancing here</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2225f0d3e87249bf94ef1da89f706f75 = L.marker(
+                [52.6996388, -3.9088055],
+                {}
+            ).addTo(marker_cluster_5238daedd154491184b576031aa2afcc);
+        
+    
+            marker_2225f0d3e87249bf94ef1da89f706f75.bindTooltip(
+                `<div>
+                     <strong>Cadair Idris - Penygadair, Dolgellau, UK</strong><br>    <strong>---------</strong><br>    <strong>Scenic gentle hiking and camping</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cce4d6aa46f2471bab8b350f12530847 = L.marker(
+                [52.696651, -4.054346],
+                {}
+            ).addTo(marker_cluster_5238daedd154491184b576031aa2afcc);
+        
+    
+            marker_cce4d6aa46f2471bab8b350f12530847.bindTooltip(
+                `<div>
+                     <strong>Fairbourne, UK</strong><br>    <strong>---------</strong><br>    <strong>A secret place that's been forgotten</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7238c6a40e8c4f63b56535503fd60e95 = L.marker(
+                [52.272222, -3.688889],
+                {}
+            ).addTo(marker_cluster_5238daedd154491184b576031aa2afcc);
+        
+    
+            marker_7238c6a40e8c4f63b56535503fd60e95.bindTooltip(
+                `<div>
+                     <strong>Elan Valley Reservoirs, Rhayader, UK</strong><br>    <strong>---------</strong><br>    <strong>Where you and James & got engaged</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cecc8e5ac7fa42fb89630621db9cf35b = L.marker(
+                [53.0932155, -3.801704],
+                {}
+            ).addTo(marker_cluster_5238daedd154491184b576031aa2afcc);
+        
+    
+            marker_cecc8e5ac7fa42fb89630621db9cf35b.bindTooltip(
+                `<div>
+                     <strong>Snowdonia National Park, Penrhyndeudraeth, UK</strong><br>    <strong>---------</strong><br>    <strong>What sounds like a wonderful place to visit</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c283309264af4cf0a014d79097d4c59f = L.marker(
+                [52.03317999999999, -3.2659789],
+                {}
+            ).addTo(marker_cluster_5238daedd154491184b576031aa2afcc);
+        
+    
+            marker_c283309264af4cf0a014d79097d4c59f.bindTooltip(
+                `<div>
+                     <strong>Llyswen, Brecon, UK</strong><br>    <strong>---------</strong><br>    <strong>Your current home</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5a6490331b1c4781a7b1db501497a1a7 = L.marker(
+                [51.9666667, -3.1166667],
+                {}
+            ).addTo(marker_cluster_5238daedd154491184b576031aa2afcc);
+        
+    
+            marker_5a6490331b1c4781a7b1db501497a1a7.bindTooltip(
+                `<div>
+                     <strong>Black Mountains, Wales, Abergavenny, UK</strong><br>    <strong>---------</strong><br>    <strong>Beautiful background scenery</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_86ff8caf90b04605a0000daf9d9e483f = L.marker(
+                [28.5728722, -80.64898079999999],
+                {}
+            ).addTo(marker_cluster_5238daedd154491184b576031aa2afcc);
+        
+    
+            marker_86ff8caf90b04605a0000daf9d9e483f.bindTooltip(
+                `<div>
+                     <strong>Kennedy Space Center, Florida</strong><br>    <strong>---------</strong><br>    <strong>A major science center</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
